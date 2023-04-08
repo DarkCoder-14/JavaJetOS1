@@ -14,7 +14,6 @@ public class JavaJetOS1
         double b;
         double x;
         double y;
-        double z;
         int RunCalcAgain;
         Scanner sc=new Scanner(System.in);
         System.out.println("Welcome to JavaJetOS! Please enter your username: ");
