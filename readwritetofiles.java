@@ -1,6 +1,7 @@
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
+import java.io.FilenameFilter;
 import java.io.IOException;  // Import the IOException class to handle errors
 import java.util.Scanner;
 
@@ -8,11 +9,12 @@ public class readwritetofiles
 {
   public static void main(String[] args) {
     try (Scanner sc = new Scanner(System.in)) {
-        try {
-          System.out.println("Enter your filename: ");
+        System.out.println("Enter your filename: ");
           String filename;
           filename=sc.nextLine();  
           File myObj = new File(filename);
+        try {
+          
           if (myObj.createNewFile()) {
             System.out.println("File created: " + myObj.getName());
           } else {
@@ -23,7 +25,7 @@ public class readwritetofiles
           e.printStackTrace();
         }
         try {
-            FileWriter myWriter = new FileWriter("filename.txt");
+            FileWriter myWriter = new FileWriter(myObj);
             System.out.println("Enter the text you want to save: ");
             String text= sc.nextLine();
             myWriter.write(text);
@@ -38,7 +40,6 @@ public class readwritetofiles
         if (readop==1)
           {
           try {
-            File myObj = new File("filename.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
               String data = myReader.nextLine();
