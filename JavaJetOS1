@@ -147,20 +147,18 @@ public class JavaJetOS1
                         RunCalcAgain = sc.nextInt();
                     }
 
-                        if(RunCalcAgain==2){
-                            System.out.println("Would you like to run another app or shut down the OS?\nPress 1 to run another app and press 0 to shut down the OS.");
-                            RunAppAgain = sc.nextInt();
-                        }
-                    }                       
-
+                    if(RunCalcAgain==2){
+                        System.out.println("Would you like to run another app or shut down the OS?\nPress 1 to run another app and press 0 to shut down the OS.");
+                        RunAppAgain = sc.nextInt();
+                    }
                 }
             }
         }
-
+    }
 }
 
 
        
-//test
+
 
 
