@@ -5,9 +5,9 @@ import java.util.*;
 
 
 
-public class JavaJetOS1
+public class JavaJetOS1tests
 {
-    public static void main(String[] args)
+    public static void ClearConsole()
     {
         int AppToRun;
         double a;
