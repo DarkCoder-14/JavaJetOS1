@@ -3,7 +3,7 @@ import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.FilenameFilter;
-import java.io.IOException;  // Import the IOException class to handle errors
+import java.io.IOException;  
 import java.util.Scanner;
 
 public class files 
