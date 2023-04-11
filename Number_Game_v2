@@ -58,8 +58,7 @@ public class Number_Game_v2 {
  
         if (i == K) {
             System.out.println(
-                "You have exhausted"
-                + " K trials.");
+                "You have failed to guess the number");
  
             System.out.println(
                 "The number was " + number);
