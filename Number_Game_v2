@@ -1,7 +1,7 @@
 // Java program for the above approach
 import java.util.Scanner;
  
-public class Number%20Game%20v2 {
+public class Number_Game_v2 {
  
     // Function that implements the
     // number guessing game
